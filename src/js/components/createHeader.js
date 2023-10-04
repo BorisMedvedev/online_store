@@ -1,5 +1,5 @@
+import {router} from '../main.js';
 import {logoLink} from '../components/svg.js';
-import {router} from '../utils/navigation.js';
 
 export const createHeader = () => {
   const header = document.createElement('header');

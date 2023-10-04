@@ -1,1 +1,5 @@
+*json
+.parcel-cache
+.gitignore
 /node_modules
+/dist
