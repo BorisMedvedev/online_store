@@ -17,9 +17,9 @@ export const createCatalogPage = () => {
 
   catalog.append(title, descr, catalogList);
 
-  productArray.forEach(card => {
-    catalogList.append(createCardProduct(card));
-  });
+  // productArray.forEach(card => {
+  //   catalogList.append(createCardProduct(card));
+  // });
 
   return {
     catalog,
