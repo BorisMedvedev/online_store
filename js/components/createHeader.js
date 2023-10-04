@@ -1,5 +1,5 @@
 import {logoLink} from '../components/svg.js';
-import {navigation} from '../utils/navigation.js';
+import {router} from '../utils/navigation.js';
 
 export const createHeader = () => {
   const header = document.createElement('header');
@@ -30,15 +30,15 @@ export const createHeader = () => {
 
   headerLinkMain.addEventListener('click', (e) => {
     e.preventDefault();
-    navigation();
+    router.navigate('/');
   });
   headerLinkCatalog.addEventListener('click', (e) => {
     e.preventDefault();
-    navigation('catalog');
+    router.navigate('/catalog');
   });
   headerBtnBascet.addEventListener('click', (e) => {
     e.preventDefault();
-    navigation('bascet');
+    router.navigate('/bascet');
   });
 
 
