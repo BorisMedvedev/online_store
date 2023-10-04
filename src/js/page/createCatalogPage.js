@@ -1,7 +1,5 @@
-import {createCardProduct} from '../components/createCardProduct.js';
 import {createDescr} from '../components/createDescr.js';
 import {createMainTitle} from '../components/createMainTitle.js';
-import {productArray} from '../productArray.js';
 
 export const createCatalogPage = () => {
   const catalog = document.createElement('div');
@@ -16,10 +14,6 @@ export const createCatalogPage = () => {
       'list-reset');
 
   catalog.append(title, descr, catalogList);
-
-  // productArray.forEach(card => {
-  //   catalogList.append(createCardProduct(card));
-  // });
 
   return {
     catalog,

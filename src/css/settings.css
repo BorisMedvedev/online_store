@@ -87,8 +87,7 @@ img {
     cursor: pointer;
     border: none;
     background-color: transparent;
-    margin-right: 10px;
-    padding-left: 15px;
+    
 }
 
 .header {
@@ -133,7 +132,7 @@ img {
 .page {
     padding: 25px;
     background-color: #fff;
-    
+
 }
 
 
@@ -146,15 +145,14 @@ img {
 }
 
 .card-item {
-   max-width: 22%;
-   width: 100%;
-   
-    
+    max-width: 22%;
+    width: 100%;
+
+
 }
 
 .card {
     padding: 15px 10px;
-    height: 350px;
     border-radius: 8px;
     border: 1px solid #f98800;
     resize: none;
@@ -167,23 +165,52 @@ img {
 }
 
 .site-btn {
+    margin-right: 10px;
+    padding-left: 15px;
     color: #fff;
     background-color: #f98800;
     border-radius: 8px;
     margin-top: auto;
-    padding: 15px 25px;
+    padding: 10px 25px;
     width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+}
+
+.site-btn:focus {
+    background-color: #965302;
+    outline: 2px solid #1100fa;
+}
+
+.site-btn:hover {
+    background-color: #e0aa67;
+}
+
+.site-btn:active {
+    background-color: #fa9f30;
 }
 
 h3 {
-  color: #f98800;
-  font-weight: 700;  
+    color: #f98800;
+    font-weight: 700;
 }
 
 .main-page__list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 25px;
+    gap: 44px;
     justify-content: center;
 }
+
+
+.descr {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 16px;
+   }

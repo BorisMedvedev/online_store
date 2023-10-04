@@ -12,6 +12,7 @@ export const createCardProduct = (obj) => {
   cardBtn.classList.add('btn-reset', 'site-btn');
   cardItem.classList.add('card-item');
   card.classList.add('card');
+  cardDesc.classList.add('descr');
 
   cardImg.src = obj.img;
   cardTitle.textContent = obj.title;
