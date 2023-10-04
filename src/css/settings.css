@@ -146,34 +146,44 @@ img {
 }
 
 .card-item {
-    max-width: 300px;
+   max-width: 22%;
+   width: 100%;
+   
+    
 }
 
 .card {
-    padding: 20px 25px;
-    max-width: 300px;
+    padding: 15px 10px;
     height: 350px;
     border-radius: 8px;
     border: 1px solid #f98800;
+    resize: none;
 }
 
 .card img {
     margin-bottom: 25px;
+    border-radius: 8px;
+    height: 150px;
 }
 
 .site-btn {
-    margin-top: auto;
-    padding: 10px 30px;
-    border-radius: 8px;
-    background-color: #f98800;
     color: #fff;
+    background-color: #f98800;
+    border-radius: 8px;
+    margin-top: auto;
+    padding: 15px 25px;
+    width: 100%;
+}
 
+h3 {
+  color: #f98800;
+  font-weight: 700;  
 }
 
 .main-page__list {
-    display: grid;
+    display: flex;
     flex-wrap: wrap;
-    grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    gap: 30px;
+    gap: 25px;
+    justify-content: center;
 }

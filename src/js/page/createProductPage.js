@@ -4,7 +4,7 @@ import {createMainTitle} from '../components/createMainTitle.js';
 export const createProductPage = () => {
   const product = document.createElement('div');
   const productList = document.createElement('ul');
-  const title = createMainTitle('Продукт');
+  const title = createMainTitle('Карточка товара');
   const descr = createDescr('Страница находится в разработке');
 
   product.classList.add('product-page', 'page');

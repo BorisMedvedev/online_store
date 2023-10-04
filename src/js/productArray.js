@@ -19,25 +19,6 @@ export const productArray = [
     title: 'Tovar-4',
     descr: 'Описание товара',
   },
-  {
-    img: 'https://www.ertea.cz/picture/fotografie-k-produktum/mophie/powerstation-usbc-xxl/mop-pwr-usbc-xxl-headphonesdesk.jpg',
-    title: 'Tovar-4',
-    descr: 'Описание товара',
-  },
-  {
-    img: 'https://www.ertea.cz/picture/fotografie-k-produktum/mophie/powerstation-usbc-xxl/mop-pwr-usbc-xxl-headphonesdesk.jpg',
-    title: 'Tovar-4',
-    descr: 'Описание товара',
-  },
-  {
-    img: 'https://www.ertea.cz/picture/fotografie-k-produktum/mophie/powerstation-usbc-xxl/mop-pwr-usbc-xxl-headphonesdesk.jpg',
-    title: 'Tovar-4',
-    descr: 'Описание товара',
-  },
-  {
-    img: 'https://www.ertea.cz/picture/fotografie-k-produktum/mophie/powerstation-usbc-xxl/mop-pwr-usbc-xxl-headphonesdesk.jpg',
-    title: 'Tovar-4',
-    descr: 'Описание товара',
-  },
+
 
 ];
