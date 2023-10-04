@@ -33,7 +33,8 @@ const init = () => {
     section.app.innerHTML = '';
     section.app.append(bascet.bascet);
   });
-  router.on('/product', () => {
+  router.on('/product/:title', ({data}) => {
+    console.log(data.title);
     section.app.innerHTML = '';
     section.app.append(product.product);
   });

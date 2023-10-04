@@ -26,7 +26,7 @@ export const createCardProduct = (obj) => {
 
   linkTitle.addEventListener('click', (e) => {
     e.preventDefault();
-    router.navigate('/product');
+    router.navigate(`/product/${obj.title}`);
   });
 
   return cardItem;
