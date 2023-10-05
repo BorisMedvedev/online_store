@@ -1,6 +1,7 @@
 import Navigo from 'navigo';
-import {createHeader} from '/src/js/components/createHeader.js';
-import {createMainContainer} from '/src/js/components/createMainContainer.js';
+import {createHeader} from '/src/js/components/createHeader/createHeader.js';
+import {createMainContainer} from
+  '/src/js/components/createMainContainer/createMainContainer.js';
 import {createSection} from '/src/js/page/createSection.js';
 export const router = new Navigo('/');
 const init = () => {

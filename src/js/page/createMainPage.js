@@ -1,5 +1,7 @@
-import {createCardProduct} from '/src/js/components/createCardProduct.js';
-import {createMainTitle} from '/src/js/components/createMainTitle.js';
+import {createCardProduct} from
+  '/src/js/components/createCardProduct/createCardProduct.js';
+import {createMainTitle} from
+  '/src/js/components/createMainTitle/createMainTitle.js';
 import {productArray} from '/src/js/productArray.js';
 
 export const createMainPage = () => {
