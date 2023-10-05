@@ -7,6 +7,7 @@ export const fetchDataFromApi = async () => {
     }
 
     const data = await response.json();
+    console.log(data);
     return data;
   } catch (error) {
     console.error('Ошибка при получении данных из API:', error);

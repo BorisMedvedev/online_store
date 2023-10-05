@@ -6,7 +6,7 @@ import {URL} from '/src/js/config';
 
 export const createCatalogPage = () => {
   const catalog = document.createElement('div');
-  const title = createMainTitle('Каталог');
+  const title = createMainTitle('Каталог товара');
 
   catalog.classList.add('catalog-page', 'page');
 

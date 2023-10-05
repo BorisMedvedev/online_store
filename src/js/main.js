@@ -19,7 +19,6 @@ const init = () => {
     const mainPage = moduleMain.createMainPage();
     section.app.innerHTML = '';
     section.app.append(mainPage);
-    console.log();
   });
   router.on('/catalog', async () => {
     const moduleCatalog = await import('/src/js/page/createCatalogPage.js');
