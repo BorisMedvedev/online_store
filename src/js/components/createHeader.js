@@ -1,5 +1,5 @@
-import {router} from '../main.js';
-import {logoLink} from '../components/svg.js';
+import {router} from '/src/js/main.js';
+import {logoLink} from '/src/js/components/svg.js';
 
 export const createHeader = () => {
   const header = document.createElement('header');
@@ -40,7 +40,6 @@ export const createHeader = () => {
     e.preventDefault();
     router.navigate('/bascet');
   });
-
 
   return header;
 };

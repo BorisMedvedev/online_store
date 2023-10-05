@@ -1,4 +1,4 @@
-import {router} from '../main';
+import {router} from '/src/js/main';
 
 export const createCardProduct = (obj) => {
   const cardItem = document.createElement('li');

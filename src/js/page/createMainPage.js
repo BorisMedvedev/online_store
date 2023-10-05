@@ -1,6 +1,6 @@
-import {createCardProduct} from '../components/createCardProduct.js';
-import {createMainTitle} from '../components/createMainTitle.js';
-import {productArray} from '../productArray.js';
+import {createCardProduct} from '/src/js/components/createCardProduct.js';
+import {createMainTitle} from '/src/js/components/createMainTitle.js';
+import {productArray} from '/src/js/productArray.js';
 
 export const createMainPage = () => {
   const mainPage = document.createElement('div');

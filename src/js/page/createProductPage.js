@@ -1,5 +1,5 @@
-import {createDescr} from '../components/createDescr.js';
-import {createMainTitle} from '../components/createMainTitle.js';
+import {createDescr} from '/src/js/components/createDescr.js';
+import {createMainTitle} from '/src/js/components/createMainTitle.js';
 
 export const createProductPage = (title) => {
   const product = document.createElement('div');

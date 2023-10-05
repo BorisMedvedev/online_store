@@ -122,6 +122,9 @@ img {
     transition: color 0.3s;
     color: #272727;
 }
+.header__link.active {
+    border: 1px solid red;
+}
 
 .header__link:hover {
     color: #f98800;
@@ -130,6 +133,7 @@ img {
 .app-container {}
 
 .page {
+    margin-bottom: 100px;
     padding: 25px;
     background-color: #fff;
 
