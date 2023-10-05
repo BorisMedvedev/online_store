@@ -1,5 +1,8 @@
+import {getProductList}
+  from '/src/js/components/createProductList/createProductList';
 import {createMainTitle} from
   '/src/js/components/createMainTitle/createMainTitle.js';
+import {URL} from '/src/js/config';
 
 export const createMainPage = () => {
   const mainPage = document.createElement('div');
@@ -7,7 +10,10 @@ export const createMainPage = () => {
 
   mainPage.classList.add('main-page', 'page');
 
-  mainPage.append(title);
+  const products = getProductList();
+  products.getProducts(`${URL}/wp-json/wp/v1/products`);
+
+  mainPage.append(title, products.productsList);
 
   return mainPage;
 };

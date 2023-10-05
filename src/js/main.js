@@ -32,11 +32,12 @@ const init = () => {
     section.app.innerHTML = '';
     section.app.append(bascet);
   });
-  router.on('/product/:title', async ({data}) => {
+  router.on('/product', async () => {
     const moduleProduct = await import('/src/js/page/createProductPage.js');
-    const product = moduleProduct.createProductPage(data.title);
+
+    const product = moduleProduct.createProductPage();
     section.app.innerHTML = '';
-    section.app.append(product.product);
+    section.app.append(product);
   });
   router.resolve();
 };

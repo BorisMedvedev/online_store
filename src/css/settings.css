@@ -133,14 +133,8 @@ img {
 
 h3 {
     color: #f98800;
-    font-weight: 700;
-}
-
-.main-page__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 44px;
-    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 
@@ -152,5 +146,5 @@ h3 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    font-size: 16px;
+    font-size: 14px;
 }

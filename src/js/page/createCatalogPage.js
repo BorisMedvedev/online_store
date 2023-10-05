@@ -1,15 +1,20 @@
-import {createDescr} from '/src/js/components/createDescr/createDescr.js';
+import {getProductList}
+  from '/src/js/components/createProductList/createProductList';
 import {createMainTitle} from
   '/src/js/components/createMainTitle/createMainTitle.js';
+import {URL} from '/src/js/config';
 
 export const createCatalogPage = () => {
   const catalog = document.createElement('div');
   const title = createMainTitle('Каталог');
-  const descr = createDescr('Страница находится в разработке');
 
   catalog.classList.add('catalog-page', 'page');
 
-  catalog.append(title, descr);
+  // const products = getProductList();
+  // products.getProducts(`${URL}/wp-json/wp/v1/products`);
+
+  catalog.append(title);
+
 
   return catalog;
 };

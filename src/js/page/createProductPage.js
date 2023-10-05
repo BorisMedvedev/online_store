@@ -1,15 +1,13 @@
-import {createDescr} from '/src/js/components/createDescr/createDescr.js';
 import {createMainTitle} from
   '/src/js/components/createMainTitle/createMainTitle.js';
 
-export const createProductPage = (title) => {
+export const createProductPage = () => {
   const product = document.createElement('div');
-  const mainTitle = createMainTitle(title);
-  const descr = createDescr('Страница находится в разработке');
+  const mainTitle = createMainTitle('title');
 
   product.classList.add('product-page', 'page');
 
-
-  product.append(mainTitle, descr);
+  product.append(mainTitle);
   return product;
 };
+

@@ -20,7 +20,7 @@ export const createCardProduct = (obj) => {
   cardTitle.textContent = obj.title;
   cardDesc.textContent = obj.desc;
   cardBtn.textContent = 'В корзину';
-  cardPrice.textContent = obj.price;
+  cardPrice.textContent = `${obj.price} руб`;
 
   linkTitle.href = '#';
 
@@ -30,7 +30,7 @@ export const createCardProduct = (obj) => {
 
   linkTitle.addEventListener('click', (e) => {
     e.preventDefault();
-    router.navigate(`/product/${obj.title}`);
+    router.navigate('/product');
   });
 
   return cardItem;
