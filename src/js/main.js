@@ -3,6 +3,9 @@ import {createHeader} from '/src/js/components/createHeader/createHeader.js';
 import {createMainContainer} from
   '/src/js/components/createMainContainer/createMainContainer.js';
 import {createSection} from '/src/js/page/createSection.js';
+import {fetchDataFromApi} from '/src/js/api/getApi.js';
+import {createCardProduct} from '/src/js/components/createCardProduct/createCardProduct';
+
 export const router = new Navigo('/');
 const init = () => {
   const app = document.body;
@@ -38,5 +41,22 @@ const init = () => {
     section.app.append(product.product);
   });
   router.resolve();
+
+  // fetchDataFromApi()
+  //     .then(data => {
+  //       for (const card of data) {
+  //         const mainPageList = document.createElement('ul');
+  //         const app = document.querySelector('.main-page__list');
+  //         mainPageList.innerHTML = '';
+  //         app.append(createCardProduct(card));
+  //         console.log(data);
+  //       }
+  //     })
+  //     .catch(error => {
+  //       // Обработка ошибки
+  //       console.error(error);
+  //     });
 };
 init();
+
+

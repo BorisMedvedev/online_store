@@ -12,9 +12,9 @@ export const createMainPage = () => {
   mainPage.classList.add('main-page', 'page');
   mainPageList.classList.add('main-page__list', 'list-reset');
 
-  productArray.forEach(card => {
-    mainPageList.append(createCardProduct(card));
-  });
+  // productArray.forEach(card => {
+  //   mainPageList.append(createCardProduct(card));
+  // });
 
   mainPage.append(title, mainPageList);
 

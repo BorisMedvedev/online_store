@@ -8,21 +8,23 @@ export const createCardProduct = (obj) => {
   const linkTitle = document.createElement('a');
   const cardDesc = document.createElement('p');
   const cardBtn = document.createElement('button');
+  const cardPrice = document.createElement('span');
 
   cardBtn.classList.add('btn-reset', 'site-btn');
   cardItem.classList.add('card-item');
   card.classList.add('card');
   cardDesc.classList.add('descr');
 
-  cardImg.src = obj.img;
+  cardImg.src = obj.image;
   cardTitle.textContent = obj.title;
-  cardDesc.textContent = obj.descr;
+  cardDesc.textContent = obj.desc;
   cardBtn.textContent = 'В корзину';
+  cardPrice.textContent = obj.price;
 
   linkTitle.href = '#';
 
   linkTitle.append(cardTitle);
-  card.append(cardImg, linkTitle, cardDesc, cardBtn);
+  card.append(cardImg, linkTitle, cardDesc,cardPrice, cardBtn);
   cardItem.append(card);
 
   linkTitle.addEventListener('click', (e) => {
