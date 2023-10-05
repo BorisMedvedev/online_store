@@ -11,9 +11,10 @@ export const createMainPage = () => {
   mainPage.classList.add('main-page', 'page');
 
   const products = getProductList();
-  products.getProducts(`${URL}/wp-json/wp/v1/products`);
+  products.getProducts(`${URL}/wp-json/wp/v1/products?count=4`);
 
   mainPage.append(title, products.productsList);
+
 
   return mainPage;
 };

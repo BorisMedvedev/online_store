@@ -10,10 +10,10 @@ export const createCatalogPage = () => {
 
   catalog.classList.add('catalog-page', 'page');
 
-  // const products = getProductList();
-  // products.getProducts(`${URL}/wp-json/wp/v1/products`);
+  const products = getProductList();
+  products.getProducts(`${URL}/wp-json/wp/v1/products`);
 
-  catalog.append(title);
+  catalog.append(title, products.productsList);
 
 
   return catalog;

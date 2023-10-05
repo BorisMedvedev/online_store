@@ -9,6 +9,7 @@ export const createHeader = () => {
   const headerLinkMain = document.createElement('button');
   const headerLinkCatalog = document.createElement('button');
   const headerBtnBascet = document.createElement('button');
+  const headerBtnBascetNum = document.createElement('span');
   const logo = document.createElement('a');
 
 
@@ -19,12 +20,14 @@ export const createHeader = () => {
   headerLinkCatalog.classList.add('header__link', 'btn-reset');
   headerBtnBascet.classList.add('header__bascet-btn', 'btn-reset');
   logo.classList.add('logo');
-
+  headerBtnBascetNum.classList.add('bascet-num');
+  headerBtnBascetNum.textContent = '1';
 
   headerLinkMain.textContent = 'Главная страница';
   headerLinkCatalog.textContent = 'Каталог';
   logo.innerHTML = logoLink;
 
+  headerBtnBascet.append(headerBtnBascetNum)
   headerNav.append(headerLinkMain, headerLinkCatalog);
   headerContainer.append(logo, headerNav, headerBtnBascet);
   header.append(headerContainer);

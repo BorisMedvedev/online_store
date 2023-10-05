@@ -25,6 +25,7 @@ export const getProductList = () => {
         list.append(productCard);
       }
 
+      console.log(data);
       productsList.append(list);
     } catch (error) {
       const msg = document.createElement('span');

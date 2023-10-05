@@ -16,6 +16,7 @@
 }
 
 .header__bascet-btn {
+  position: relative;
   margin: 0;
   width: 30px;
   height: 30px;
@@ -23,6 +24,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.bascet-num {
+  color: #000;
+  /* text-align: center; */
+  background-color: #f98800;
+  border-radius: 99px;
+  /* width: 20px; */
+  /* height: 20px; */
+  font-size: 12px;
+  line-height: 21px;
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 22px;
+  padding: 0 7px;
+  line-height: 21px;
 }
 
 .header__link {
