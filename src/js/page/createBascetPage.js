@@ -4,18 +4,13 @@ import {createMainTitle} from
 
 export const createBascetPage = () => {
   const bascet = document.createElement('div');
-  const bascetList = document.createElement('ul');
   const title = createMainTitle('Корзина');
   const descr = createDescr('Страница находится в разработке');
 
   bascet.classList.add('bascet-page', 'page');
-  bascetList.classList.add('bascet-page__list', 'list-reset');
 
 
-  bascet.append(title, descr, bascetList);
+  bascet.append(title, descr);
 
-  return {
-    bascet,
-    bascetList,
-  };
+  return bascet;
 };
