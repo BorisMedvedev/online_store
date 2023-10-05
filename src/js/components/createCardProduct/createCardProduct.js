@@ -1,3 +1,4 @@
+import './createCardProduct.css';
 import {router} from '/src/js/main';
 
 export const createCardProduct = (obj) => {
@@ -24,7 +25,7 @@ export const createCardProduct = (obj) => {
   linkTitle.href = '#';
 
   linkTitle.append(cardTitle);
-  card.append(cardImg, linkTitle, cardDesc,cardPrice, cardBtn);
+  card.append(cardImg, linkTitle, cardDesc, cardPrice, cardBtn);
   cardItem.append(card);
 
   linkTitle.addEventListener('click', (e) => {

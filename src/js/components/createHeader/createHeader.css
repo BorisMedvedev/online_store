@@ -1,0 +1,39 @@
+.header {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  background-color: #ffffff;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.header__bascet-btn {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url('/src/img/basket.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header__link {
+  margin-right: 80px;
+  transition: color 0.3s;
+  color: #272727;
+}
+.header__link.active {
+  border: 1px solid red;
+}
+
+.header__link:hover {
+  color: #f98800;
+}

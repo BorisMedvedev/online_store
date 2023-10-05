@@ -87,50 +87,8 @@ img {
     cursor: pointer;
     border: none;
     background-color: transparent;
-    
-}
 
-.header {
-    margin-bottom: 30px;
-    padding: 20px 0;
-    background-color: #ffffff;
 }
-
-.header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 200px;
-    height: auto;
-}
-
-.header__bascet-btn {
-    margin: 0;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/basket.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.header__link {
-    margin-right: 80px;
-    transition: color 0.3s;
-    color: #272727;
-}
-.header__link.active {
-    border: 1px solid red;
-}
-
-.header__link:hover {
-    color: #f98800;
-}
-
-.app-container {}
 
 .page {
     margin-bottom: 100px;
@@ -139,33 +97,12 @@ img {
 
 }
 
-
 .main-title {
     margin: 0;
     margin-bottom: 25px;
     font-size: 32px;
     font-weight: 600;
     color: #272727;
-}
-
-.card-item {
-    max-width: 22%;
-    width: 100%;
-
-
-}
-
-.card {
-    padding: 15px 10px;
-    border-radius: 8px;
-    border: 1px solid #f98800;
-    resize: none;
-}
-
-.card img {
-    margin-bottom: 25px;
-    border-radius: 8px;
-    height: 150px;
 }
 
 .site-btn {
@@ -179,7 +116,6 @@ img {
     width: 100%;
     font-size: 16px;
     transition: background-color 0.3s;
-
 }
 
 .site-btn:focus {
@@ -217,4 +153,4 @@ h3 {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     font-size: 16px;
-   }
+}

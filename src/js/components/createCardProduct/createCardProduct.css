@@ -1,0 +1,17 @@
+.card-item {
+  max-width: 22%;
+  width: 100%;
+}
+
+.card {
+  padding: 15px 10px;
+  border-radius: 8px;
+  border: 1px solid #f98800;
+  resize: none;
+}
+
+.card img {
+  margin-bottom: 25px;
+  border-radius: 8px;
+  height: 150px;
+}

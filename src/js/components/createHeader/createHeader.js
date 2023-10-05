@@ -1,3 +1,4 @@
+import './createHeader.css';
 import {router} from '/src/js/main.js';
 import {logoLink} from '/src/js/components/svg.js';
 
