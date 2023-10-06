@@ -1,7 +1,7 @@
 import './createHeader.css';
 import {router} from '/src/js/main.js';
 import {logoLink} from '/src/js/components/svg.js';
-
+const array = JSON.parse(localStorage.getItem('bascet')) || [];
 export const createHeader = () => {
   const header = document.createElement('header');
   const headerContainer = document.createElement('div');
@@ -11,7 +11,7 @@ export const createHeader = () => {
   const headerBtnBascet = document.createElement('button');
   const headerBtnBascetNum = document.createElement('span');
   const logo = document.createElement('a');
-
+  const num = array.length;
 
   header.classList.add('header');
   headerContainer.classList.add('container', 'header__container');
@@ -21,13 +21,13 @@ export const createHeader = () => {
   headerBtnBascet.classList.add('header__bascet-btn', 'btn-reset');
   logo.classList.add('logo');
   headerBtnBascetNum.classList.add('bascet-num');
-  headerBtnBascetNum.textContent = '1';
+  headerBtnBascetNum.textContent = num;
 
   headerLinkMain.textContent = 'Главная страница';
   headerLinkCatalog.textContent = 'Каталог';
   logo.innerHTML = logoLink;
 
-  headerBtnBascet.append(headerBtnBascetNum)
+  headerBtnBascet.append(headerBtnBascetNum);
   headerNav.append(headerLinkMain, headerLinkCatalog);
   headerContainer.append(logo, headerNav, headerBtnBascet);
   header.append(headerContainer);

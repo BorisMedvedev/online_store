@@ -1,5 +1,6 @@
 import './createCardProduct.css';
 import {router} from '/src/js/main';
+export const bascetArray = JSON.parse(localStorage.getItem('bascet')) || [];
 
 export const createCardProduct = (obj) => {
   const cardItem = document.createElement('li');
@@ -37,6 +38,20 @@ export const createCardProduct = (obj) => {
   linkTitle.addEventListener('click', (e) => {
     e.preventDefault();
     router.navigate('/product');
+  });
+
+  cardBtn.addEventListener('click', () => {
+    const cardBascet = {};
+    cardBascet.image = cardImg.src;
+    cardBascet.title = cardTitle.textContent = obj.title;
+    cardBascet.desc = cardDesc.textContent = obj.desc;
+    cardBascet.price = cardPrice.textContent = `${price} ₽`;
+
+    bascetArray.push(cardBascet);
+
+    localStorage.setItem('bascet', JSON.stringify(bascetArray));
+
+    console.log(bascetArray);
   });
 
   return cardItem;
