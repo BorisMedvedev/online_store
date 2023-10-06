@@ -23,6 +23,12 @@ export const createHeader = () => {
   headerBtnBascetNum.classList.add('bascet-num');
   headerBtnBascetNum.textContent = num;
 
+  if (num === 0) {
+    headerBtnBascetNum.style.display = 'none';
+  } else {
+    headerBtnBascetNum.style.display = 'block';
+  }
+
   headerLinkMain.textContent = 'Главная страница';
   headerLinkCatalog.textContent = 'Каталог';
   logo.innerHTML = logoLink;
